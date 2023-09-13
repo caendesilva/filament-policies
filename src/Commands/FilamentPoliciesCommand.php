@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Desilva\FilamentPolicies\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentPoliciesCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-policies';
 
     public $description = 'My command';
 
