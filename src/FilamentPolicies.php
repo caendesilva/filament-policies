@@ -8,14 +8,20 @@ class FilamentPolicies
 {
     public static function boot(): void
     {
-        $policyFiles = glob(resource_path('markdown/policies/*.md'));
+        $policyFiles = self::policyFiles();
 
         $router = app('router');
         foreach ($policyFiles as $policy) {
-            $policyName = basename($policy, '.md');
-            $router->get($policyName, function () use ($policyName) {
-                return (new PolicyPage($policyName))->render();
+            $router->get($policy, function () use ($policy) {
+                return (new PolicyPage($policy))->render();
             });
         }
+    }
+
+    public static function policyFiles(): array
+    {
+        return collect(glob(resource_path('markdown/policies/*.md')))
+            ->map(fn($policy) => basename($policy, '.md'))
+            ->toArray();
     }
 }
