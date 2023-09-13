@@ -35,7 +35,7 @@ class FilamentPoliciesServiceProvider extends PackageServiceProvider
                     ->publishConfigFile()
                     ->publishMigrations()
                     ->askToRunMigrations()
-                    ->askToStarRepoOnGitHub('desilva/filament-policies');
+                    ->askToStarRepoOnGitHub('caendesilva/filament-policies');
             });
 
         $configFileName = $package->shortName();
