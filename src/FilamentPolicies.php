@@ -21,7 +21,7 @@ class FilamentPolicies
     public static function policyFiles(): array
     {
         return collect(glob(resource_path('markdown/policies/*.md')))
-            ->map(fn($policy) => basename($policy, '.md'))
+            ->map(fn ($policy) => basename($policy, '.md'))
             ->toArray();
     }
 }
