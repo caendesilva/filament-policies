@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/caendesilva/filament-policies/fix-php-code-styling.yml?branch=3.x&label=code%20style&style=flat-square)](https://github.com/caendesilva/filament-policies/actions?query=workflow%3A"Fix+PHP+Code+Styling"+branch%3A3.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/desilva/filament-policies.svg?style=flat-square)](https://packagist.org/packages/desilva/filament-policies)
 
-# Super simple policy pages for FilamentPHP v3 pages, for all your terms of service and privacy policy needs!
+**Super simple policy pages for FilamentPHP v3 pages, for all your terms of service and privacy policy needs!**
 
 ## Installation
 
@@ -26,7 +26,7 @@ For example:
 echo "Hello World!" > resources/markdown/policies/terms-of-service.md
 ```
 
-Then, you can visit localhost:8000/terms-of-service, or whichever your app URL is.
+Then, you can visit [localhost:8000/terms-of-service](http://localhost:8000/terms-of-service), or whichever your app URL is.
 
 ## Customization
 
