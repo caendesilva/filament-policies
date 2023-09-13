@@ -2,7 +2,6 @@
 
 namespace Desilva\FilamentPolicies;
 
-use Desilva\FilamentPolicies\Commands\FilamentPoliciesCommand;
 use Desilva\FilamentPolicies\Testing\TestsFilamentPolicies;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
@@ -105,8 +104,8 @@ class FilamentPoliciesServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('filament-policies', __DIR__ . '/../resources/dist/components/filament-policies.js'),
-            Css::make('filament-policies-styles', __DIR__ . '/../resources/dist/filament-policies.css'),
-            Js::make('filament-policies-scripts', __DIR__ . '/../resources/dist/filament-policies.js'),
+            // Css::make('filament-policies-styles', __DIR__ . '/../resources/dist/filament-policies.css'),
+            // Js::make('filament-policies-scripts', __DIR__ . '/../resources/dist/filament-policies.js'),
         ];
     }
 
@@ -115,9 +114,7 @@ class FilamentPoliciesServiceProvider extends PackageServiceProvider
      */
     protected function getCommands(): array
     {
-        return [
-            FilamentPoliciesCommand::class,
-        ];
+        return [];
     }
 
     /**
@@ -149,8 +146,6 @@ class FilamentPoliciesServiceProvider extends PackageServiceProvider
      */
     protected function getMigrations(): array
     {
-        return [
-            'create_filament-policies_table',
-        ];
+        return [];
     }
 }
