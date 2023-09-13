@@ -87,6 +87,8 @@ class FilamentPoliciesServiceProvider extends PackageServiceProvider
             }
         }
 
+        FilamentPolicies::boot();
+
         // Testing
         Testable::mixin(new TestsFilamentPolicies());
     }
