@@ -31,7 +31,7 @@ class PolicyPage extends BasePage
             'title' => Str::headline($this->policy),
             'current' => $this->policy,
             'livewire' => $this,
-            'pages' => FilamentPolicies::policyFiles()
+            'pages' => FilamentPolicies::policyFiles(),
         ];
     }
 }
