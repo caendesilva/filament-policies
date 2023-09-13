@@ -78,13 +78,13 @@ class FilamentPoliciesServiceProvider extends PackageServiceProvider
         FilamentIcon::register($this->getIcons());
 
         // Handle Stubs
-        if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
-                $this->publishes([
-                    $file->getRealPath() => base_path("stubs/filament-policies/{$file->getFilename()}"),
-                ], 'filament-policies-stubs');
-            }
-        }
+        // if (app()->runningInConsole()) {
+        //     foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
+        //         $this->publishes([
+        //             $file->getRealPath() => base_path("stubs/filament-policies/{$file->getFilename()}"),
+        //         ], 'filament-policies-stubs');
+        //     }
+        // }
 
         FilamentPolicies::boot();
 
