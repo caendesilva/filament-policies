@@ -1,8 +1,8 @@
 # Easy Filament Policies
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/desilva/filament-policies.svg?style=flat-square)](https://packagist.org/packages/desilva/filament-policies)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/caendesilva/filament-policies/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/caendesilva/filament-policies/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/caendesilva/filament-policies/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/caendesilva/filament-policies/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/caendesilva/filament-policies/run-tests.yml?branch=3.x&label=tests&style=flat-square)](https://github.com/caendesilva/filament-policies/actions?query=workflow%3Arun-tests+branch%3A3.x)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/caendesilva/filament-policies/fix-php-code-style-issues.yml?branch=3.x&label=code%20style&style=flat-square)](https://github.com/caendesilva/filament-policies/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3A3.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/desilva/filament-policies.svg?style=flat-square)](https://packagist.org/packages/desilva/filament-policies)
 
 # Super simple policy pages for FilamentPHP v3 pages, for all your terms of service and privacy policy needs!
