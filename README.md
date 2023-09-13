@@ -1,13 +1,11 @@
-# Super simple policy pages for FilamentPHP v3 pages, for all your terms of service and privacy policy needs!
+# Easy Filament Policies
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/desilva/filament-policies.svg?style=flat-square)](https://packagist.org/packages/desilva/filament-policies)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/desilva/filament-policies/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/desilva/filament-policies/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/desilva/filament-policies/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/desilva/filament-policies/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/desilva/filament-policies.svg?style=flat-square)](https://packagist.org/packages/desilva/filament-policies)
 
-
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+# Super simple policy pages for FilamentPHP v3 pages, for all your terms of service and privacy policy needs!
 
 ## Installation
 
@@ -17,12 +15,20 @@ You can install the package via composer:
 composer require desilva/filament-policies
 ```
 
-You can publish and run the migrations with:
+## Usage
+
+Simply drop your Markdown policy files into `resources/markdown/policies`,
+and the plugin will discover them as routes and turn them into super simple policy pages!
+
+For example:
 
 ```bash
-php artisan vendor:publish --tag="filament-policies-migrations"
-php artisan migrate
+echo "Hello World!" > resources/markdown/policies/terms-of-service.md
 ```
+
+Then, you can visit localhost:8000/terms-of-service, or whichever your app URL is.
+
+## Customization
 
 You can publish the config file with:
 
@@ -40,20 +46,8 @@ This is the contents of the published config file:
 
 ```php
 return [
+    //
 ];
-```
-
-## Usage
-
-```php
-$filamentPolicies = new Desilva\FilamentPolicies();
-echo $filamentPolicies->echoPhrase('Hello, Desilva!');
-```
-
-## Testing
-
-```bash
-composer test
 ```
 
 ## Changelog
