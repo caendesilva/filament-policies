@@ -9,8 +9,8 @@ class FilamentPolicies
     public static function boot(): void
     {
         $policyFiles = self::policyFiles();
-
         $router = app('router');
+
         foreach ($policyFiles as $policy) {
             $router->get($policy, function () use ($policy) {
                 return (new PolicyPage($policy))->render();
