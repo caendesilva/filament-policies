@@ -6,10 +6,10 @@
         "filament-policies",
         "filament policy pages"
     ],
-    "homepage": "https://github.com/desilva/filament-policies",
+    "homepage": "https://github.com/caendesilva/filament-policies",
     "support": {
-        "issues": "https://github.com/desilva/filament-policies/issues",
-        "source": "https://github.com/desilva/filament-policies"
+        "issues": "https://github.com/caendesilva/filament-policies/issues",
+        "source": "https://github.com/caendesilva/filament-policies"
     },
     "license": "MIT",
     "authors": [
