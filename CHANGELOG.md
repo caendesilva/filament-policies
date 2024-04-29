@@ -2,6 +2,14 @@
 
 All notable changes to `filament-policies` will be documented in this file.
 
+## v0.2.5-alpha - 2024-04-29
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.0.0 to 2.1.0 by @dependabot in https://github.com/caendesilva/filament-policies/pull/13
+
+**Full Changelog**: https://github.com/caendesilva/filament-policies/compare/v0.2.4-alpha...v0.2.5-alpha
+
 ## v0.2.4-alpha - 2024-04-15
 
 ### What's Changed
