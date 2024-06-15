@@ -28,10 +28,15 @@ class PolicyPage extends BasePage
     {
         return [
             'policy' => Str::markdown(file_get_contents($this->file)),
-            'title' => Str::headline($this->policy),
+            'title' => $this->getTitle(),
             'current' => $this->policy,
             'livewire' => $this,
             'pages' => FilamentPolicies::policyFiles(),
         ];
+    }
+
+    public function getTitle(): string
+    {
+        return Str::headline($this->policy);
     }
 }
