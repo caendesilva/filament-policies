@@ -4,7 +4,6 @@ namespace Desilva\FilamentPolicies\Http;
 
 use Desilva\FilamentPolicies\FilamentPolicies;
 use Filament\Pages\BasePage;
-use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Str;
 
 class PolicyPage extends BasePage
