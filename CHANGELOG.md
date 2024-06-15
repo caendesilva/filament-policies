@@ -2,6 +2,15 @@
 
 All notable changes to `filament-policies` will be documented in this file.
 
+## v0.3.0-alpha - 2024-06-15
+
+### What's Changed
+
+* Use the generated title in the HTML title tag by @caendesilva in https://github.com/caendesilva/filament-policies/pull/14
+* Use improved APA formatting for titles by @caendesilva in https://github.com/caendesilva/filament-policies/pull/15
+
+**Full Changelog**: https://github.com/caendesilva/filament-policies/compare/v0.2.5-alpha...v0.3.0-alpha
+
 ## v0.2.5-alpha - 2024-04-29
 
 ### What's Changed
