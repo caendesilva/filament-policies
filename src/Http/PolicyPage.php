@@ -37,6 +37,6 @@ class PolicyPage extends BasePage
 
     public function getTitle(): string
     {
-        return Str::headline($this->policy);
+        return Str::apa(Str::headline($this->policy));
     }
 }
