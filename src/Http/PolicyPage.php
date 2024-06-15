@@ -4,6 +4,7 @@ namespace Desilva\FilamentPolicies\Http;
 
 use Desilva\FilamentPolicies\FilamentPolicies;
 use Filament\Pages\BasePage;
+use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Str;
 
 class PolicyPage extends BasePage
@@ -28,10 +29,15 @@ class PolicyPage extends BasePage
     {
         return [
             'policy' => Str::markdown(file_get_contents($this->file)),
-            'title' => Str::headline($this->policy),
+            'title' => $this->getTitle(),
             'current' => $this->policy,
             'livewire' => $this,
             'pages' => FilamentPolicies::policyFiles(),
         ];
+    }
+
+    public function getTitle(): string
+    {
+        return Str::headline($this->policy);
     }
 }
